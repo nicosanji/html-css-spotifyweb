@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    color: white;
+}
+
 /* **MAIN** */
 
 .main-container {
     height: calc(100vh - 80px);
     background-color: #141922;
+    display: flex;
 }
 
 /* *NAVBAR VERTICAL* */
@@ -17,11 +22,61 @@
     width: 50px;
     height: calc(100vh - 80px);
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 5px;
+}
+
+.nav-aside-ul {
+    list-style: none;
+}
+
+.nav-aside-top {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-aside-top img {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-aside-center {
+    flex-grow: 1;
+}
+
+.nav-aside-bottom {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.install img {
+    height: 20px;
+    width: 20px;
+}
+
+.nav-aside-bottom hr {
+    display: none;
+}
+
+.username .profile-ring {
+    border-radius: 50%;
+    background-color: #878787;
+    height: 25px;
+    width: 25px;
+    overflow: hidden;
 }
 
 /* *CONTAINER CENTER* */
 
-
+.main-box {
+    width: 100%;
+}
 
 /* **FOOTER** */
 
