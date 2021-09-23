@@ -234,11 +234,46 @@ body {
 
 .footer-center {
     flex-grow: 1;
+    padding: 0 20px;
+}
+
+.footer-center-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-center-bottom {
+    display: flex;
+}
+
+.center-bottom-left, .center-bottom-right {
+    flex-shrink: 0;
+}
+
+.center-bottom-row {
+    flex-grow: 1;
+    background-color: cadetblue;
+    position: relative;
+}
+
+.center-bottom-row-charge {
+    position: absolute;
+    background-color: chartreuse;
+    width: 40%;
+    height: 100%;
 }
 
 .footer-right {
     flex-shrink: 0;
+    width: 15%;
 }
+
+.footer-right-box {
+    display: flex;
+    
+}
+
+
 
 /* MEDIA MIN-WIDTH 552px */
 
