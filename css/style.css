@@ -5,31 +5,23 @@
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     color: white;
 }
 
-/* **MAIN** */
-
 .main-container {
     height: calc(100vh - 80px);
-    background-color: #141922;
+    background-color: blue;
     display: flex;
 }
-
-/* *NAVBAR VERTICAL* */
 
 .nav-aside {
-    width: 50px;
-    height: calc(100vh - 80px);
-    background-color: black;
+    width: 40px;
+    background-color: blueviolet;
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
     padding: 5px;
-}
-
-.nav-aside-ul {
-    list-style: none;
 }
 
 .nav-aside-top {
@@ -37,15 +29,47 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
-.nav-aside-top img {
-    width: 30px;
-    height: 30px;
+.nav-aside-top .logo-img-small {
+    width: 25px;
+}
+
+.nav-aside-top .logo-img {
+    width: 160px;
+    display: none;
+}
+
+
+.nav-aside-top ul {
+    list-style: none;
+}
+
+.nav-aside-top li img {
+    width: 20px;
+}
+
+.nav-aside-top li a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-aside-top h5 {
+    display: none;
 }
 
 .nav-aside-center {
     flex-grow: 1;
+    overflow: auto;
+}
+
+.nav-aside-center h4,.nav-aside-center-plus {
+    display: none;
+}
+
+.nav-aside-center ul {
+    display: none;
 }
 
 .nav-aside-bottom {
@@ -55,32 +79,158 @@ body {
     align-items: center;
 }
 
-.install img {
-    height: 20px;
-    width: 20px;
+.nav-aside-bottom .install {
+    padding-bottom: 5px;
 }
 
-.nav-aside-bottom hr {
+.nav-aside-bottom .install img {
+    width: 15px;
+} 
+
+.nav-aside-bottom .username {
+    padding-top: 5px;
+}
+
+.nav-aside-bottom .username img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.nav-aside-bottom h5 {
     display: none;
 }
 
-.username .profile-ring {
-    border-radius: 50%;
-    background-color: #878787;
-    height: 25px;
-    width: 25px;
-    overflow: hidden;
+.nav-aside-bottom hr {
+    width: 100%;
+    display: none;
 }
-
-/* *CONTAINER CENTER* */
 
 .main-box {
-    width: 100%;
+    width: calc(100% - 40px);
 }
 
-/* **FOOTER** */
-
-.footer-row {
+.main-box-upgrade {
     height: 80px;
-    background-color: #282828;
+    background-color: black;
+}
+
+.footer-container {
+    background-color: black;
+    height: 80px;
+    display: flex;
+}
+
+.footer-left {
+    flex-shrink: 0;
+}
+
+.footer-center {
+    flex-grow: 1;
+}
+
+.footer-right {
+    flex-shrink: 0;
+}
+
+
+
+@media screen and (min-width:553px){
+
+    .nav-aside {
+        width: 240px;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .nav-aside-top h5 {
+        display: inline-block;
+    }
+
+    .nav-aside-top {
+        align-items: flex-start;    
+    }
+
+    .nav-aside-top .logo-img-small {
+        display: none;
+    }
+    
+    .nav-aside-top .logo-img {
+        display: inline-block;
+    }
+
+    .nav-aside-top ul {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .nav-aside ul li {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-aside-top li img {
+        width: 30px;
+    }
+   
+    .nav-aside-center {
+        padding-top: 20px;
+    }
+    
+    .nav-aside-center-plus {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav-aside-center h4 {
+        display: block;
+    }
+
+    .nav-aside-center i {
+        font-size: 35px;
+        padding-right: 10px;
+    }
+
+    .nav-aside-center ul {
+        list-style: none;
+        display: inherit;
+    }
+
+    .nav-aside-center ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 0;
+    }
+
+    .nav-aside-bottom {
+        align-items: flex-start;
+    }
+
+    .nav-aside-bottom .install {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-aside-bottom .username {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .nav-aside-bottom h5 {
+        display: inline-block;
+        padding-left: 10px;
+    }
+
+    .nav-aside-bottom hr {
+        display: inline-block;
+    }
+
+    .main-box {
+        width: calc(100% - 240px);
+    }
+
 }

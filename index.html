@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title> Boolean Spotify</title>
+    <title>Boolean Spotify</title>
 </head>
 
 <body>
@@ -14,36 +17,58 @@
     <!-- **MAIN CONTAINER** -->
     <div class="main-container">
 
-        <!-- *NAVBAR VERICAL* -->
+        <!-- *VERICAL NAVBAR* -->
         <div class="nav-aside">
 
             <div class="nav-aside-top">
-                <div class="logo-small">
+                <div class="logo-img-small">
                     <img src="img/logo-small.svg" alt="logo-small">
                 </div>
+                <div class="logo-img">
+                    <img src="img/logo.svg" alt="logo">
+                </div>
                 <ul>
-                    <li><img src="img/home.svg" alt="home"><span>Home</span></li>
-                    <li><img src="img/search.svg" alt="search"><span>Cerca</span></li>
-                    <li><img src="img/libreria.svg" alt="libreria"><span>La tua libreria</span></li>
+                    <li><a href="#"><img src="img/home.svg" alt="home"></a>
+                        <h5>Home</h5>
+                    </li>
+                    <li><a href="#"><img src="img/search.svg" alt="search"></a>
+                        <h5>Cerca</h5>
+                    </li>
+                    <li><a href="#"><img src="img/libreria.svg" alt="libreria"></a>
+                        <h5>La tua libreria</h5>
+                    </li>
                 </ul>
+
 
             </div>
 
             <div class="nav-aside-center">
-                <div>PLAYLIST</div>
-                <div><i class="fas fa-plus-square"></i><span>Crea Playlist</span></div>
-                <div></div>
+                <h4>PLAYLIST</h4>
+                <div class="nav-aside-center-plus">
+                    <i class="fas fa-plus-square"></i>
+                    <h5>Crea playlist</h5>
+                </div>
+                <ul>
+                    <li><a href="#"><h5>Nome playlist</h5></a></li>
+                    <li><a href="#"><h5>Nome playlist</h5></a></li>
+                    <li><a href="#"><h5>Nome playlist</h5></a></li>
+                    <li><a href="#"><h5>Nome playlist</h5></a></li>
+                    <li><a href="#"><h5>Nome playlist</h5></a></li>
+                    <li><a href="#"><h5>Nome playlist</h5></a></li>
+                    <li><a href="#"><h5>Nome playlist</h5></a></li>
+                </ul>
+
+
             </div>
             <div class="nav-aside-bottom">
                 <div class="install">
                     <img src="img/download.svg" alt="download">
-                    <span>Installa app</span>
+                    <h5>Installa app</h5>
                 </div>
                 <hr>
                 <div class="username">
-                    <div class="profile-ring">
-                        <img src="img/profile.svg" alt="profile"><span>Jhon Doe</span>
-                    </div>
+                    <img src="img/profile.svg" alt="profile">
+                    <h5>John Doe</h5>
                 </div>
             </div>
 
@@ -54,7 +79,7 @@
         <div class="main-box">
 
             <!-- UPGRADE -->
-            <div class="main-box-top">
+            <div class="main-box-upgrade">
             </div>
 
             <!-- NAVBAR -->
@@ -72,7 +97,7 @@
 
 
     <!-- **FOOTER ROW** -->
-    <div class="footer-row">
+    <div class="footer-container">
 
         <!-- *LEFT* -->
         <div class="footer-left">
