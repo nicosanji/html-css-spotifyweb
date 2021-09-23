@@ -128,7 +128,26 @@ body {
     border-radius: 25px;
 }
 
+.main-box-navbar {
+    padding: 10px;
+    background-color: chartreuse;
+}
 
+.main-box-navbar ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-box-navbar ul li {
+    padding: 5px 10px;
+}
+
+.main-box-navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
 
 
 .footer-container {
