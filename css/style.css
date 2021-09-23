@@ -16,6 +16,8 @@ body {
     display: flex;
 }
 
+/* NAV VERTICAL */
+
 .nav-aside {
     width: 40px;
     background-color: blueviolet;
@@ -28,8 +30,7 @@ body {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .nav-aside-top .logo-img-small {
@@ -107,9 +108,13 @@ body {
     display: none;
 }
 
+/* CENTRAL BLOCK */
+
 .main-box {
     width: calc(100% - 40px);
 }
+
+/* upgrade */
 
 .main-box-upgrade {
     height: 80px;
@@ -128,16 +133,20 @@ body {
     border-radius: 25px;
 }
 
+/* link list */
+
 .main-box-navbar {
-    padding: 10px;
     background-color: chartreuse;
+    height: 50px;
 }
 
 .main-box-navbar ul {
+    height: 100%;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .main-box-navbar ul li {
@@ -149,6 +158,34 @@ body {
     color: black;
 }
 
+/* album list */
+
+.main-box-center {
+    height: calc(100vh - 210px);
+    background-color: gray;
+    overflow: auto;
+    padding: 10px;
+}
+
+.main-box-center-card img {
+    width: 100%;
+}
+
+.main-box-center-recently {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-box-center-card {
+    width: calc(100% / 2 - 5px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* FOOTER NAVBAR */
 
 .footer-container {
     background-color: black;
@@ -169,6 +206,7 @@ body {
 }
 
 
+/* MEDIA MIN-WIDTH 553px */
 
 @media screen and (min-width:553px){
 
@@ -265,6 +303,35 @@ body {
 
     .main-box {
         width: calc(100% - 240px);
+    }
+
+}
+
+
+/* MEDIA MIN-WIDTH 640px */
+
+@media screen and (min-width:640px){
+
+
+
+}
+
+/* MEDIA MIN-WIDTH 879px */
+
+@media screen and (min-width:879px){
+
+    .main-box-center-card {
+        width: calc(100% / 4 - 7.5px);
+    }
+
+}
+
+/* MEDIA MIN-WIDTH 1441px */
+
+@media screen and (min-width:1441px){
+
+    .main-box-center-card {
+        width: calc(100% / 6 - 8.5px);
     }
 
 }
