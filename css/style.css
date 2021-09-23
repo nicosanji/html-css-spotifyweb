@@ -206,10 +206,30 @@ body {
     background-color: black;
     height: 80px;
     display: flex;
+    position: relative;
 }
+
+/* left */
 
 .footer-left {
     flex-shrink: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-left-box {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left-box img {
+    width: 30px;
+}
+
+.left-box-icons {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-center {
@@ -219,7 +239,6 @@ body {
 .footer-right {
     flex-shrink: 0;
 }
-
 
 /* MEDIA MIN-WIDTH 552px */
 
@@ -322,6 +341,10 @@ body {
 /* MEDIA MIN-WIDTH 639px */
 
 @media screen and (min-width:639px){
+
+    .left-box-icons {
+        flex-direction: row;
+    }
 
 
 }
