@@ -215,6 +215,7 @@ body {
     width: calc(100% / 2 - 5px);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     text-align: center; 
     padding: 15px 0;   
 }
@@ -232,7 +233,6 @@ body {
 
 .footer-left {
     flex-shrink: 0;
-    padding: 10px;
     display: flex;
     align-items: center;
 }
@@ -243,63 +243,124 @@ body {
 }
 
 .footer-left-box img {
-    width: 30px;
+    width: 40px;
+}
+
+.left-box-img {
+    padding: 5px;
+}
+
+.left-box-text {
+    padding: 0 5px;
+}
+
+.left-box-text h6 {
+    color: #878787;
 }
 
 .left-box-icons {
+    color: #878787;
     display: flex;
     flex-direction: column;
+    padding: 0 5px;
+    gap: 5px;
 }
+
+/* center */
 
 .footer-center {
     flex-grow: 1;
-    padding: 0 20px;
+}
+
+.footer-center-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
 }
 
 .footer-center-top {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.footer-center-top i {
+    padding: 0 5px;
+}
+
+.footer-center-top .fa-play-circle {
+    font-size: 25px;
 }
 
 .footer-center-bottom {
     display: flex;
+    align-items: center;
+    font-size: 16px;
 }
 
 .center-bottom-left, .center-bottom-right {
     flex-shrink: 0;
 }
 
+.center-bottom-left {
+    padding-left: 10%;
+    padding-right: 5px;
+}
+
+.center-bottom-right {
+    padding-right: 10%;
+    padding-left: 5px;
+}
+
 .center-bottom-row {
     flex-grow: 1;
-    background-color: cadetblue;
+    height: 6px;
+    background-color: #5a5a5a;
     position: relative;
+    border-radius: 5px;
 }
 
 .center-bottom-row-charge {
     position: absolute;
-    background-color: chartreuse;
+    background-color: #878787;
     width: 40%;
     height: 100%;
+    border-radius: 5px;
 }
+
+/* right */
 
 .footer-right {
     flex-shrink: 0;
-    width: 20%;
-    padding: 10px;
+    padding-right: 10px ;
 }
 
 .footer-right-box {
     display: flex;
+    height: 100%;
+    align-items: center;
 }
 
 .footer-right-box i {
-    flex-shrink: 0;
+    padding: 0 5px;
 }
 
 .right-bottom-row {
     flex-grow: 1;
-    height: 10px;
-    background-color: cornflowerblue;
+    height: 4px;
+    background-color: #5a5a5a;
+    position: relative;
+    border-radius: 4px;
+    width: 8vw;
+}
+
+.right-bottom-row-charge {
+    position: absolute;
+    background-color: #878787;
+    width: 40%;
+    height: 100%;
+    border-radius: 4px;
 }
 
 /* MEDIA MIN-WIDTH 552px */
